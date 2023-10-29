@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vote</title>
+		<link href="bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app w-100">
+			<div class="card">
+				<div class="container calon1">
+					<img src="assets/img/2.jpg" alt="" />
+					<h1 class="text-warning">Aulia Izza</h1>
+					<p class="text-warning">REKAM MEDIK - D4</p>
+					<p class="text-warning">Universitas Dian Nuswantoro</p>
+					<button id="button" onclick="vote('calon1')">Vote</button>
+				</div>
+				<div class="container hasil calon1">
+					<div class="result text-warning">
+						Hasil Vote:
+						<div class="diagram calon1">
+							<progress max="100" value="10"></progress
+							><span id="count">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="container calon2">
+					<img src="assets/img/1.jpg" alt="" />
+					<h1 class="text-warning">Salman Yuris</h1>
+					<p class="text-warning">SISTEM INFORMASI - S1</p>
+					<p class="text-warning">Universitas Dian Nuswantoro</p>
+					<button id="button" onclick="vote('calon2')">Vote</button>
+				</div>
+				<div class="container hasil calon2">
+					<div class="result text-warning">
+						Hasil Vote:
+						<div class="diagram calon2">
+							<progress max="100"></progress><span id="count">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="container calon3">
+					<img src="assets/img/3.jpg" alt="" />
+					<h1 class="text-warning">Ainaya Trifadia</h1>
+					<p class="text-warning">ILMU HUKUM - S1</p>
+					<p class="text-warning">Universitas Negeri Semarang</p>
+					<button id="button" onclick="vote('calon3')">Vote</button>
+				</div>
+				<div class="container hasil calon3">
+					<div class="result text-warning">
+						Hasil Vote:
+						<div class="diagram calon3">
+							<progress max="100"></progress><span id="count">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row w-100">
+				<div
+					class="reset p-0 d-flex justify-content-center"
+					style="margin: auto">
+					<button onclick="reset()" class="rounded m-0">
+						Reset Pemungutan Suara
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="bootstrap.bundle.min.js"></script>
+	</body>
+</html>
