@@ -1,40 +1,46 @@
 :root {
-  font-family:  'Times New Roman', Times, serif !important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
+
+/* Main Application */
 .app {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: white;
-    color: yellow;
     padding: 0;
     height: 100vh;
-  }
-  
-  .card {
+    background-color: white;
+    color: yellow;
+}
+
+/* Card Layout */
+.card {
     width: 350px;
     margin-left: 20px;
-  }
+}
 
-  progress {
-    margin-right: 10px;
-  }
-
-  .container {
+/* Container Styling */
+.container {
     text-align: center;
     background-color: black;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  img {
+}
+
+.container.hasil {
+    margin-top: 10px;
+}
+
+/* Image Styling */
+img {
     border-radius: 10%;
-  }
-  
-  button {
+}
+
+/* Button Styling */
+button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #ffb012;
@@ -44,30 +50,35 @@
     margin-top: 20px;
     border-radius: 10%;
     font-weight: bolder;
-  }
-  
-  .container.hasil {
-    margin-top: 10px;
-  }
-  
-  .result {
+}
+
+/* Voting Result */
+.result {
     font-size: 18px;
-  }
-  
-  progress[value]{
+}
+
+progress {
+    margin-right: 10px;
+}
+
+progress[value] {
     accent-color: #ffb012;
-  }
-  .reset button{
+}
+
+/* Reset Button */
+.reset button {
     background-color: orange;
     font-weight: bolder;
-  }
-  
-  div.calon3 h1{
+}
+
+/* Candidate 3 Heading */
+div.calon3 h1 {
     /* text-transform: uppercase !important; */
     /* font-variant: small-caps; */
     font-size: 2.2em;
-  }
-  
-  h1 {
+}
+
+/* Heading Styling */
+h1 {
     margin: 15px 0;
-  }
+}
